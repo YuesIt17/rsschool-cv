@@ -59,8 +59,7 @@ var app = new Vue({
 });
 ```
 
-6. Experience (for a Junior Dev it means all kinds of experience: coding tests, projects from courses,
-freelance projects - wherever they had the opportunity to demonstrate skills they have.
-Also it would be awesome if you add links to source code)
-7. Education (including courses, seminars, lectures, online learning)
-8. English (elaborate on what kind of practice you had, if any, how long it lasted and so on)
+6. August 2018 — currently, Web-developer.
+Development, support and installation of solutions for the internal corporate portal on the MS SharePoint 2016 platform using 	.NET C #, ASP.NET, SQL, JS, VueJS, PowerShell;
+7. Novosibirsk State Technical University, Faculty of Business, Applied Informatics.
+8. English (courses at work, 1 year, elementary level).
