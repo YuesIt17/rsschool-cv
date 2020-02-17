@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Curriculum Vitae</title>
+   </head>
+   <body>
+		<h2>Curriculum Vitae</h2>
+		<ol>
+			<li>Evgeniy Y</li>
+			<li>Email: <a href="mailto:yues.it@yandex.ru">yues.it@yandex.ru</a></li>
+			<li>My goal is to become a guru Frontend Developer</li>
+			<li>My key skills:
+				<ul>
+					<li>C# .NET Framework;</li>
+					<li>MS SQL;</li>
+					<li>ASP.NET;</li>
+					<li>MS SharePoint;</li>
+					<li>basic JavaScript;</li>
+					<li>basic Vue.js;</li>
+					<li>basic jQuery;</li>
+					<li>Bootstrap, CSS, HTML;</li>
+					<li>SVN, TFS;</li>
+					<li>Jira.</li>
+				</ul>
+			</li>
+			<li>VueJs:</li>
+			<code>
+				<pre>
+var dataComponent = {
+	employeeBirthday: []
+};
+
+var emplBirthdayComponent = Vue.component('employee-birthday-component', {
+	data: function () {
+		return dataComponent;
+	},
+	created: function () {
+		this.getEmployeeBirthday();
+	},
+	methods: {
+		getEmployeeBirthday: function () {
+			try {
+				$.ajax({
+					type: "GET",
+					url: "/TestTaskPages/EmployeesBirthday.aspx/GetEmployeeWithNearBirthday",
+					contentType: "application/json; charset=utf-8",
+					success: function (data) {
+
+						if (data.d &amp;&amp; data.d.length &gt; 0) {
+							dataComponent.employeeBirthday = data.d;
+						}
+					},
+					error: function (XMLHttpRequest, textStatus, errorThrown) {
+						console.log("Request Error:" + textStatus + errorThrown);
+					}
+				});
+			} catch (ex) {
+				console.log("Error:" + ex);
+			}
+		}
+	}
+});
+
+
+var app = new Vue({
+	el: '#employeeBirthdayApp',
+	data: {
+	}
+});
+				</pre>
+			</code>
+		</ol>
+		<ol start="6">
+			<li>
+				August 2018 — currently, Web-developer.
+				Development, support and installation of solutions for the internal corporate portal on the MS SharePoint 2016 platform using 	.NET C #, ASP.NET, SQL, JS, VueJS, PowerShell;
+			</li>
+			<li>Novosibirsk State Technical University, Faculty of Business, Applied Informatics.</li>
+			<li>English (courses at work, 1 year, elementary level).</li>
+		</ol>
+   </body>
+</html>
